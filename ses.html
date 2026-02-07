@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You Ses</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(135deg, #fce4ec, #f3efe9);
+      color: #2f2f2f;
+      line-height: 1.9;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><g fill="none" stroke="%23e6d8d0" stroke-width="1"><path d="M100 40c10 20 30 30 50 40-20 10-40 20-50 40-10-20-30-30-50-40 20-10 40-20 50-40z"/></g></svg>');
+      background-repeat: repeat;
+      background-size: 180px 180px;
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 64px 40px;
+      background: #fffdf9;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #777;
+      margin-bottom: 48px;
+      font-family: 'Georgia', serif;
+    }
+
+    p {
+      margin-bottom: 26px;
+      font-size: 1.35rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .divider {
+      width: 80px;
+      height: 1px;
+      background: #ddd;
+      margin: 56px auto;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #999;
+      text-align: right;
+      font-family: 'Georgia', serif;
+    }
+
+    /* Falling emoji flowers */
+    .flower-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -2;
+    }
+
+    .flower {
+      position: absolute;
+      font-size: 24px;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.8;
+      }
+    }
+
+    /* Responsive styles for mobile */
+    @media (max-width: 480px) {
+      .container {
+        padding: 40px 20px;
+        margin: 30px auto;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+      }
+
+      .flower {
+        font-size: 16px; /* smaller flowers on mobile */
+      }
+    }
+	.photo {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .photo img {
+      max-width: 160px;
+      border-radius: 6px;
+      opacity: 0.85;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Falling emoji flowers -->
+  <div class="flower-container" id="flowerContainer"></div>
+
+  <div class="container">
+    <h1>Hi Ses,</h1>
+    <div class="subtitle">No pressure. Just honesty.</div>
+
+    <p>
+      I know what day this is. Valentine’s Day and also the day that once belonged to us.
+      I didn’t want to let it pass pretending I feel nothing.
+    </p>
+
+    <p>
+      I know we’re not together right now, and I respect that. I’ve spent a lot of time reflecting about the moments where I should have been better.
+    </p>
+
+    <p>
+      You meant more to me than I ever managed to explain properly. You made ordinary days lighter,
+      and loving you changed me in ways I’ll always carry forward. I hope, in some quiet way, it meant the same to you.
+    </p>
+
+    <p>
+      We’ve had our share of tough moments and struggles, but we’ve also shared countless sweet and meaningful times. Through all the problems, here we are almost completing three years together. Those experiences, both difficult and joyful, are a part of us, a part of what makes this journey unique.
+      Through everything, we’ve grown, learned, and supported each other in ways that only we can understand. Valentine’s Day is just a reminder of that — of the bond we’ve built, the memories we’ve created, and the moments that have shaped us.
+    </p>
+
+    <p>
+      A part of me truly believes that what we had was real enough to deserve another conversation.
+      If there’s ever space for that, even a small one, I’m here to listen, openly and patiently,
+      to everything you feel.
+    </p>
+
+    <p>
+      You are my favorite Valentine. And regardless of where life takes us,
+      you’ll always be a meaningful chapter in my life.
+    </p>
+
+    <p>
+      Don't forget... I'm also just a boy standing in front of a girl asking her to love him again and be with him.
+    </p>
+
+    <p>
+      I just wanted to be honest on a day that once mattered to us...
+    </p>
+
+    <p class="center">
+      Love you more modas ❤️
+    </p>
+    <p class="center">
+      - Minindu -
+    </p>
+	<div class="photo">
+      <img src="images/photo.jpg" alt="A small memory" />
+    </div>
+
+    <footer>
+      Written with care • 14 • 02
+    </footer>
+  </div>
+
+  <!-- JS to generate falling emoji flowers -->
+  <script>
+    const flowerContainer = document.getElementById('flowerContainer');
+    const flowers = ['🌸','🌹','🌺','🌷','💐'];
+    const numFlowers = 25;
+
+    for (let i = 0; i < numFlowers; i++) {
+      const flower = document.createElement('div');
+      flower.classList.add('flower');
+      flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+      flower.style.left = Math.random() * 100 + 'vw';
+      flower.style.top = '-50px';
+      const duration = 6 + Math.random() * 6;
+      const delay = Math.random() * 8;
+      flower.style.animationDuration = duration + 's';
+      flower.style.animationDelay = delay + 's';
+      const size = 20 + Math.random() * 20;
+      flower.style.fontSize = size + 'px';
+      flowerContainer.appendChild(flower);
+    }
+  </script>
+</body>
+</html>
